@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/scientific_name_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scientific name"/>
+
+    <TextView
+        android:id="@+id/scientific_name_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/scientific_name_label"/>
+
+    <TextView
+        android:id="@+id/taxon_id_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Taxonomic identifier"
+        app:layout_constraintTop_toBottomOf="@+id/scientific_name_view"/>
+
+    <TextView
+        android:id="@+id/taxon_id_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/taxon_id_label"/>
+
+    <TextView
+        android:id="@+id/main_common_name_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/taxon_id_view"
+        android:text="Common name"/>
+
+    <TextView
+        android:id="@+id/main_common_name_view"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_common_name_label"
+        android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>
